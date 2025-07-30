@@ -3,43 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel | Tribute page</title>
+    <title>Samuel | Technical Documentation Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Harka Sampang Rai</h1>
-        <p>“Dhusrai, fusrai, aasu ra pasina — hidne hoina, jagaune yatra thiyo usko.”</p>
-    </header>
-    <main id="main">
-        <figure id="img-div">
-            <img src="./Harka_Sampang.png" alt="image of harka sampang" id="image">
-            <figcaption id="img-caption">Harka Sampang Rai leading a voluntary labor campaign to bring water to Dharan.</figcaption>
-        </figure>
-        <section id="harka">
-            <article id="intro">
-                <h2>About Harka Sampang Rai</h2>
-                <p>Harka Raj Sampang Rai, born in 1982 in Khartamchha, Khotang, is a Nepalese politician and social activist who became the mayor of Dharan Sub-Metropolitan City in 2022 as an independent candidate. With a walking stick as his electoral symbol, Rai secured 20,821 votes, defeating established political party candidates. His grassroots approach and dedication to solving Dharan’s chronic water crisis have made him a beloved figure among locals.</p>
-            </article>
-            <article id="tribute-info">
-                <h2>His Contributions:</h2>
-                <ul>
-                    <li><span>Elected as Independent Mayor of Dharan (May 22, 2022):</span> Won with 20,821 votes, using a walking stick as his symbol, defeating major party candidates.</li>
-                    <li><span>Started Volunteer Water Campaign (2022–2023):</span> Launched weekly Saturday volunteer efforts to lay water pipelines, addressing Dharan’s water crisis.</li>
-                    <li><span>Kokaha River Water Project (June 13, 2023):</span> Led a 98-day campaign to lay 42 km of pipelines, bringing water to Dharan-20.</li>
-                    <li><span>World Book of Records Award (July 7, 2023):</span> Recognized for volunteerism and water project contributions by the World Book of Records, London.</li>
-                    <li><span>Sumnima-Paruhang Statue (2023–2024):</span> Chaired a committee to build a cultural statue, raising over Rs 40 million.</li>
-                    <li><span>Connected Water Sources (2022–2023):</span> Linked Pakuwa, Sardu, Nisane, and Balu Rivers for water supply, supported by donors.</li>
-                    <li><span>Canal Construction via Volunteer Campaign (June 2025):</span> Led a 14-day volunteer campaign to build a 348-meter drainage canal in Dharan, completed for a few lakh rupees, compared to an estimated crore rupees and 6–7 months via traditional contracting. This project, highlighted in a June 29, 2025, X post, showcases Rai’s commitment to cost-effective, community-driven infrastructure development.</li>
-                </ul>
-            </article>
-        </section>
-        <section id="message">
-            <blockquote>“My first priority as a mayor is to solve the drinking water crisis in Dharan.” <cite>-Harka Sampang Rai</cite></blockquote>
-        </section>
-        <section id="connect">
-            <h3>Read more about his incredible contributions on <a href="https://en.wikipedia.org/wiki/Harka_Raj_Rai" id="tribute-link" target="_blank">Wikipedia</a></h3>
-        </section>
-    </main>
+  <nav id="navbar">
+    <header><h1>Python Documentation</h1></header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header><h2>Introduction</h2></header>
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+      <p>It is widely used in web development, data science, artificial intelligence, automation, and more.</p>
+      <code>print("Hello, World!")</code>
+      <p>Python is dynamically typed and garbage-collected.</p>
+      <p>Its syntax allows developers to express concepts in fewer lines of code.</p>
+      <ul>
+        <li>Simple syntax</li>
+        <li>Extensive standard library</li>
+        <li>Huge community</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header><h2>Variables and Data Types</h2></header>
+      <p>Variables in Python do not need explicit declaration to reserve memory space.</p>
+      <p>The assignment happens automatically when you assign a value to a variable.</p>
+      <code>x = 5</code>
+      <code>name = "Python"</code>
+      <p>Python has various data types including integers, floats, strings, and booleans.</p>
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>str</li>
+        <li>bool</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+      <header><h2>Control Flow</h2></header>
+      <p>Python supports common control flow tools like if-else statements, loops, and more.</p>
+      <p>The syntax is clean and uses indentation to define code blocks.</p>
+      <code>if x > 0:\n  print("Positive")</code>
+      <p>Python supports for and while loops.</p>
+      <code>for i in range(5):\n  print(i)</code>
+      <ul>
+        <li>if / elif / else</li>
+        <li>for loops</li>
+        <li>while loops</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header><h2>Functions</h2></header>
+      <p>Functions are defined using the def keyword.</p>
+      <p>They help in organizing code into reusable blocks.</p>
+      <code>def greet(name):\n  return f"Hello, {name}"</code>
+      <p>You can pass arguments and return values from functions.</p>
+      <p>Python also supports anonymous functions using lambda.</p>
+      <ul>
+        <li>def functions</li>
+        <li>lambda functions</li>
+        <li>parameters and return</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Modules_and_Packages">
+      <header><h2>Modules and Packages</h2></header>
+      <p>Modules are Python files with definitions and statements.</p>
+      <p>They allow logical organization of Python code.</p>
+      <code>import math</code>
+      <code>from datetime import datetime</code>
+      <p>Packages are namespaces containing multiple modules.</p>
+      <ul>
+        <li>import keyword</li>
+        <li>Standard Library</li>
+        <li>Third-party packages</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
